@@ -6,14 +6,14 @@
 
 <script>
   import './assets/style.sass';
-import Header from './components/Header.vue'
+  import Header from './components/Header.vue'
 
-export default {
-  name: 'app',
-  components: {
-    Header
+  export default {
+    name: 'app',
+    components: {
+      Header
+    }
   }
-}
 </script>
 
 <style>
