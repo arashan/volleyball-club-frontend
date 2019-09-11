@@ -1,0 +1,36 @@
+<template>
+    <header class="header header--transp">
+        <div class="container">
+            <div class="header__inner">
+                <Logo></Logo>
+                <ul class="menu-nav header__nav">
+                    <li class="menu-nav__li" v-for="item in headerItems" :key="item.name"><a :href="item.link">{{item.name}}</a></li>
+                </ul>
+                <div class="login header__login">
+                    <button class="btn btn--transp" data-toggle="modal" data-target="#exampleModal">Вход</button>
+                </div>
+            </div>
+        </div>
+    </header>
+</template>
+
+<script>
+    import Logo from './Logo'
+    export default {
+        name: 'Header',
+        components: {
+            Logo
+        },
+        data: function () {
+            return {
+                headerItems: [
+                    {link: '#news', name: 'Новости'},
+                    {link: '#', name: 'Расписание'},
+                    {link: '#', name: 'Оплата'},
+                    {link: '#', name: 'Галерея'},
+                    {link: '#', name: 'Контакты'},
+                ]
+            }
+        }
+    }
+</script>
