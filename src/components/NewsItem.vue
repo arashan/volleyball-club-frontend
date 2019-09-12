@@ -10,7 +10,7 @@
             </h4>
             <div class="article-list__details">
                             <span class="article-list__date">
-                                {{new Date(article.date) | moment("DD MMMM YYYY")}}
+                                {{new Date(article.date) | moment("DD MMMM YYYY hh:mm")}}
                             </span>
                 <span class="article-list__tag" v-for="(tag, index) in article.tags" :key="index">
                    {{tag}}
