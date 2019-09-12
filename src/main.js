@@ -1,10 +1,9 @@
 import Vue from 'vue';
+import App from './App.vue';
+
 import 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-import App from './App.vue';
-
 
 const moment = require('moment');
 require('moment/locale/ru');
@@ -12,6 +11,7 @@ require('moment/locale/ru');
 Vue.use(require('vue-moment'), {
   moment
 });
+
 
 Vue.config.productionTip = false;
 

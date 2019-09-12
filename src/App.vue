@@ -5,6 +5,7 @@
     <content>
       <div class="container">
         <News></News>
+        <Timetable></Timetable>
       </div>
     </content>
   </div>
@@ -15,11 +16,12 @@
   import Header from './components/Header.vue'
   import headerSlider from './components/HeaderSlider.vue'
   import News from './components/News.vue'
+  import Timetable from './components/Timetable.vue'
 
   export default {
     name: 'app',
     components: {
-      Header, headerSlider, News
+      Header, headerSlider, News, Timetable
     }
   }
 </script>
