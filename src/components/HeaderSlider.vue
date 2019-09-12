@@ -1,6 +1,6 @@
 <template>
     <div class="header__slider">
-        <slider animation="fade" autoplay="false">
+        <slider :autoplay="false">
             <slider-item
                     v-for="(item, index) in sliderItems"
                     :key="index"
@@ -30,19 +30,13 @@
         },
         data: function () {
             return {
-                sliderItems: [],
-                list: [
-                    { backgroundColor: '#3f51b5', width: '100%', height: '100%' },
-                    { backgroundColor: '#eee', width: '100%', height: '100%' },
-                    { backgroundColor: '#f44336', width: '100%', height: '100%' },
-                ]
+                sliderItems: []
             }
         },
         methods: {
             loadJSONData() {
                 const data = require("../assets/data/slider.json");
                 this.sliderItems = this.prepareDataForUse(data);
-                console.log(this.sliderItems);
             },
             prepareDataForUse(data) {
                 return data.map(item => {
