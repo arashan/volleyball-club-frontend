@@ -2,10 +2,8 @@
     <div class="page">
         <h2 class="page__title">Новости</h2>
         <div class="page__inner">
-            <!-- article list ****************************************************************************************************** -->
-            <div class="article-list" v-for="article in articleList" :key="article.id">
-                <news-item :article="article"></news-item>
-            </div>
+            <!-- article list ********************************************************************* -->
+            <news-item v-for="article in articleList" :key="article.id" :article="article"></news-item>
         </div>
     </div>
 </template>

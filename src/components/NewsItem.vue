@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="article-list">
         <div class="article-list__img"><img :src="article.image"></div>
         <div class="article-list__info">
             <h3 class="article-list__title mb-2">

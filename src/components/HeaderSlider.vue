@@ -5,15 +5,17 @@
                     v-for="(item, index) in sliderItems"
                     :key="index"
             >
-
-                    <div class="slider-item1">
-                        <img class="d-block w-100 slider-img" :src="item.img" alt="First slide">
-                  <!--      <div class="slider-text d-md-block">
-                            <h5 class="slider-text__title">Играй с нами в <br> <span class="logo">Iskre</span></h5>
-                            <p class="slider-text__descr">{{item.text}}</p>
-                        </div>-->
+                <img class="slider-img" :src="item.img" alt="First slide">
+                <div class="slider-text-wrap">
+                    <div class="slider-text">
+                        <h5 class="slider-text__title">Играй с нами в <br> <span class="logo">Iskre</span></h5>
+                        <p class="slider-text__descr">{{item.text}}</p>
                     </div>
-
+                </div>
+                    <!--<div class="slider-item1">
+                        <img class="d-block w-100 slider-img" :src="item.img" alt="First slide">
+                        &lt;!&ndash;&ndash;&gt;
+                    </div>-->
             </slider-item>
         </slider>
     </div>
