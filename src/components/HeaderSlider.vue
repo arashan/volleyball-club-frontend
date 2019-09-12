@@ -1,19 +1,19 @@
 <template>
     <div class="header__slider">
-        <slider :autoplay="false">
+        <slider  :autoplay="false">
             <slider-item
                     v-for="(item, index) in sliderItems"
                     :key="index"
             >
-                <div class="carousel-item">
-                    <div class="carousel-item">
-                        <img class="d-block w-100 carousel-img" :src="item.img" alt="First slide">
-                        <div class="carousel-caption carousel-text d-md-block">
-                            <h5 class="carousel-text__title">Играй с нами в <br> <span class="logo">Iskre</span></h5>
-                            <p class="carousel-text__descr">{{item.text}}</p>
-                        </div>
+
+                    <div class="slider-item1">
+                        <img class="d-block w-100 slider-img" :src="item.img" alt="First slide">
+                  <!--      <div class="slider-text d-md-block">
+                            <h5 class="slider-text__title">Играй с нами в <br> <span class="logo">Iskre</span></h5>
+                            <p class="slider-text__descr">{{item.text}}</p>
+                        </div>-->
                     </div>
-                </div>
+
             </slider-item>
         </slider>
     </div>
