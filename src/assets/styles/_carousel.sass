@@ -1,77 +1,78 @@
-.slider-indicators
-	li
-		+border-radius(50%)
-		width: 20px
-		height: 20px
-		margin-left: 10px
-		margin-right: 10px
-		+tablet
-			width: 10px
-			height: 10px
+/* slider style */
+.slider
+  width: 100% !important
+  height: $h_slider !important
+  min-height: $h_slider_min
+  &-btn
+    width: $w_slider_btn !important
+  &-img
+    opacity: 0.85
+    width: 100%
+    height: 100%
+    object-fit: cover
+    background-color: $col_slider_bg
+  &-text-wrap
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+  &-text
+    +flexbox
+    +justify-content(center)
+    +flex-direction(column)
+    color: $col_slider_txt
+    text-align: left
+    width: 100%
+    height: 100%
+    padding: 0 $w_slider_btn
+    &__title
+      font-family: 'OpenSans SemiBold', Arial, sans-serif
+      font-size: $fs_slider_title
+      letter-spacing: 6px
+      line-height: 1
+      text-transform: uppercase
+      color: $col_slider_txt
+      +large
+        font-size: $fs_slider_title_lg
+      +medium
+        font-size: $fs_slider_title_md
+      +tablet
+        font-size: $fs_slider_title_tb
+      +phone
+        font-size: $fs_slider_title_ph
+    .logo
+      font-size: $fs_slider_logo
+      color: $col_acsent
+      letter-spacing: 3px
+      +large
+        font-size: $fs_slider_logo_lg
+      +medium
+        font-size: $fs_slider_logo_md
+      +tablet
+        font-size: $fs_slider_logo_tb
+      +phone
+        font-size: $fs_slider_logo_ph
+    &__descr
+      font-family: $ff_slider_text
+      line-height: 2
+      text-transform: uppercase
+      font-size: $fs_slider_text
+      background-color: rgba(0, 0, 0, 0.5)
+      padding: $pd_slider_text
+      +large
+        font-size: $fs_slider_text_lg
+      +medium
+        font-size: $fs_slider_text_md
+      +tablet
+        font-size: $fs_slider_text_tb
+      +phone
+        font-size: $fs_slider_text_ph
 
-.slider-item1
-	position: relative
-	height: 100%
-
-.slider-text
-	position: absolute
-	bottom: 35%
-	right: 15%
-	left: 15%
-	z-index: 10
-	padding-top: 20px
-	padding-bottom: 20px
-	color: #fff
-	text-align: left
-
-	&__title
-		font-family: 'OpenSans SemiBold', Arial, sans-serif
-		font-size: $fs_slider_title
-		letter-spacing: 6px
-		line-height: 1
-		text-transform: uppercase
-		color: #FFFFFF
-		+large
-			font-size: $fs_slider_title_lg
-		+medium
-			font-size: $fs_slider_title_md
-		+tablet
-			font-size: $fs_slider_title_tb
-		+phone
-			font-size: $fs_slider_title_ph
-	.logo
-		font-size: $fs_slider_logo
-		color: $col_acsent
-		letter-spacing: 3px
-		+large
-			font-size: $fs_slider_logo_lg
-		+medium
-			font-size: $fs_slider_logo_md
-		+tablet
-			font-size: $fs_slider_logo_tb
-		+phone
-			font-size: $fs_slider_logo_ph
-	&__descr
-		font-family: $ff_slider_text
-		line-height: 2
-		text-transform: uppercase
-		font-size: $fs_slider_text
-		background-color: rgba(0, 0, 0, 0.5)
-		padding: $pd_slider_text	
-		+large
-			font-size: $fs_slider_text_lg
-		+medium
-			font-size: $fs_slider_text_md
-		+tablet
-			font-size: $fs_slider_text_tb
-		+phone
-			font-size: $fs_slider_text_ph
-
-
-.slider-img
-	opacity: 0.85
-	max-height: 700px	
-	min-height: 250px
-	object-fit: cover
-	background-color: $col_slider_bg
-	width: 100%
+  .slider-indicator-icon
+    width: $w_slider_indicator!important
+    height: $h_slider_indicator!important
+    margin: 0 1rem!important
+    +tablet
+      width: calc(#{$w_slider_indicator} / 2)!important
+      height: calc(#{$h_slider_indicator} / 2)!important
