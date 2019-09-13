@@ -9,8 +9,8 @@
         <Payment></Payment>
         <Gallery></Gallery>
         <Contacts></Contacts>
-        <Footer></Footer>
       </div>
+      <Footer></Footer>
     </content>
   </div>
 </template>
