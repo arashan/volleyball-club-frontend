@@ -177,10 +177,25 @@ a {
   -moz-border-radius: 4px;
   border-radius: 4px; }
 
+.table td, .table th {
+  padding: 0.5rem;
+  font-size: "OpenSans", Arial, sans-serif; }
 .table .form-control {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
-  border-radius: 0; }
+  border-radius: 0;
+  border-width: 0;
+  padding: 0.5rem;
+  font-size: "OpenSans", Arial, sans-serif; }
+  .table .form-control:active, .table .form-control:focus {
+    background-color: #b0d5e8;
+    outline: none;
+    box-shadow: none; }
+.table td.active {
+  padding: 0; }
+
+.table-bordered thead td, .table-bordered thead th {
+  border-bottom-width: 1px; }
 
 .link {
   color: #36aeea;
@@ -563,8 +578,9 @@ a {
   font-family: "OpenSans Bold", Arial, sans-serif;
   color: #212121;
   text-transform: uppercase; }
-.page .table-bordered thead td, .page .table-bordered thead th {
-  border-bottom-width: 1px; }
+
+.timetable .table th {
+  width: calc(100% / 7); }
 
 .payment thead th:first-child {
   color: inherit; }
