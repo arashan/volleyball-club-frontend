@@ -58,20 +58,26 @@ a
   background-color: $col_acsent
   color: $col_font_btn
   text-transform: uppercase
+  border: $borderW_btn solid transparent
   +border-radius($rad_btn)
   cursor: pointer  
   +tablet
     padding: 5px 1.8rem
   +phone
-    padding: 5px 1.2rem
-  &:hover
-    color: $col_font_btn      
+    padding: 2px 1.2rem
+  &:hover, &:active, &:focus
+    color: $col_font_btn
+    box-shadow: none
+    outline: none
   &--transp
     background-color: transparent
-    border: $borderW_btn solid $col_acsent
+    border-color: $col_acsent
     color: $col_acsent
-    &:hover
-      color: $col_acsent   
+    &:hover, &:active, &:focus
+      color: $col_acsent
+  &--transpbr
+    background-color: transparent
+    color: $col_acsent
 
 .form-control
   +border-radius($rad_form_contr)      
