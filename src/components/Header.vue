@@ -30,10 +30,10 @@
             return {
                 headerItems: [
                     {link: '#news', name: 'Новости'},
-                    {link: '#', name: 'Расписание'},
-                    {link: '#', name: 'Оплата'},
-                    {link: '#', name: 'Галерея'},
-                    {link: '#', name: 'Контакты'},
+                    {link: '#timetable', name: 'Расписание'},
+                    {link: '#payment', name: 'Оплата'},
+                    {link: '#gallery', name: 'Галерея'},
+                    {link: '#contacts', name: 'Контакты'},
                 ],
                 showMenu: false
             }

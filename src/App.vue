@@ -4,11 +4,11 @@
     <header-slider></header-slider>
     <content>
       <div class="container">
-        <News></News>
-        <Timetable></Timetable>
-        <Payment></Payment>
-        <Gallery></Gallery>
-        <Contacts></Contacts>
+        <News id="news"></News>
+        <Timetable id="timetable"></Timetable>
+        <Payment id="payment"></Payment>
+        <Gallery id="gallery"></Gallery>
+        <Contacts id="contacts"></Contacts>
         <Footer></Footer>
       </div>
     </content>
