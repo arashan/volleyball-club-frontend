@@ -9,6 +9,7 @@
         <Payment></Payment>
         <Gallery></Gallery>
         <Contacts></Contacts>
+        <Footer></Footer>
       </div>
     </content>
   </div>
@@ -23,11 +24,12 @@
   import Payment from './components/Payment.vue'
   import Gallery from './components/Gallery.vue'
   import Contacts from './components/Contacts.vue'
+  import Footer from './components/Footer.vue'
 
   export default {
     name: 'app',
     components: {
-      Header, headerSlider, News, Timetable, Payment, Gallery, Contacts
+      Header, headerSlider, News, Timetable, Payment, Gallery, Contacts, Footer
     }
   }
 </script>
