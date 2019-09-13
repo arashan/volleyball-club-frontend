@@ -1,90 +1,106 @@
 /* content */
 .article-list
-	+flexbox
-	+align-items(center)
-	margin-bottom: 1rem
-	+tablet
-		+flex-direction(column)
-	&__img
-		width: 20%
-		margin-right: 2rem
-		margin-bottom: 0
-		img 
-			width: 100%
-			height: auto
-		+tablet
-			width: 100%		
-			margin-right: 0	
-			margin-bottom: 0.5rem
-	&__info
-		width: 70%
-		+tablet
-			width: 100%
-	&__title
-		font-size: $fs_h3
-		letter-spacing: 2px	
-		font-family: $ff_blog_title	
-		font-weight: bold
-		color: $col_title
-		line-height: 1.3
-		height: 40px
-		text-overflow: ellipsis
-		white-space: nowrap
-		overflow: hidden
-		&:hover
-			color: $col_title
-			opacity: 0.9
-	&__subtitle
-		font-size: $fs_h4	
-		line-height: 1.3
-		color: inherit
-		height: 40px
-		text-overflow: clip
-		overflow: hidden
-		&:hover
-			color: inherit	
-	&__details
-		line-height: 2
-		color: $col_acsent
-		margin-bottom: 0
-		height: 30px
-		text-overflow: clip
-		overflow: hidden
-		+tablet
-			margin-bottom: 0.5rem
-
+  +flexbox
+  +align-items(center)
+  margin-bottom: 1rem
+  +tablet
+    +flex-direction(column)
+  &__img
+    width: 20%
+    margin-right: 2rem
+    margin-bottom: 0
+    img
+      width: 100%
+      height: auto
+    +tablet
+      width: 100%
+      margin-right: 0
+      margin-bottom: 0.5rem
+  &__info
+    width: 70%
+    +tablet
+      width: 100%
+  &__title
+    font-size: $fs_h3
+    letter-spacing: 2px
+    font-family: $ff_blog_title
+    font-weight: bold
+    color: $col_title
+    line-height: 1.3
+    height: 40px
+    text-overflow: ellipsis
+    white-space: nowrap
+    overflow: hidden
+    &:hover
+      color: $col_title
+      opacity: 0.9
+  &__subtitle
+    font-size: $fs_h4
+    line-height: 1.3
+    color: inherit
+    height: 40px
+    text-overflow: clip
+    overflow: hidden
+    &:hover
+      color: inherit
+  &__details
+    line-height: 2
+    color: $col_acsent
+    margin-bottom: 0
+    height: 30px
+    text-overflow: clip
+    overflow: hidden
+    +tablet
+      margin-bottom: 0.5rem
 .page
-	&__title
-		font-size: $fs_h2
-		letter-spacing: 3px
-		line-height: 2
-		font-family: $ff_blog_title
-		font-weight: bold
-		color: $col_title
-		padding: 1.3rem 0
-		text-transform: uppercase
-		text-align: center			
-
-	table
-		color: inherit	
-	th	
-		font-family: $ff_blog_title
-		color: $col_title
-		text-transform: uppercase
-	.table-bordered thead td, .table-bordered thead th		
-		border-bottom-width: 1px
+  &__title
+    font-size: $fs_h2
+    letter-spacing: 3px
+    line-height: 2
+    font-family: $ff_blog_title
+    font-weight: bold
+    color: $col_title
+    padding: 1.3rem 0
+    text-transform: uppercase
+    text-align: center
+  &__inner
+    overflow: auto
+  table
+    color: inherit
+  th
+    font-family: $ff_blog_title
+    color: $col_title
+    text-transform: uppercase
+  .table-bordered thead td, .table-bordered thead th
+    border-bottom-width: 1px
 
 .payment
-	thead
-		th:first-child
-			color: inherit
-	tbody 
-		td:first-child
-			font-family: $ff_blog_title
-			color: $col_title
-		td
-			max-width: 250px
+  thead
+    th:first-child
+      color: inherit
+  tbody
+    td:first-child
+      font-family: $ff_blog_title
+      color: $col_title
+    td
+      max-width: 250px
+  h4
+    color: $col_acsent
+    text-align: right
 
-	h4
-		color: $col_acsent
-		text-align: right
+.gallery
+  .page__inner
+    +flexbox
+    +justify-content(flex-start)
+    +flex-wrap(wrap)
+  .image
+    width: 30%
+    height: 200px
+    margin: 0!important
+    margin-right: 1rem !important
+    margin-bottom: 1rem !important
+    &:last-child
+      margin-right: 0px !important
+    +phone
+      width: 100% !important
+      margin-right: 0px !important

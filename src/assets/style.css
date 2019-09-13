@@ -177,6 +177,11 @@ a {
   -moz-border-radius: 4px;
   border-radius: 4px; }
 
+.table .form-control {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0; }
+
 .link {
   color: #36aeea;
   font-size: 0.8rem;
@@ -318,9 +323,9 @@ a {
     align-items: center;
     padding: 2.1rem 0px; }
   .footer__copyright {
-    font-size: 1.2rem; }
+    font-size: 1rem; }
   .footer-contacts {
-    font-size: 1.2rem;
+    font-size: 1rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -550,6 +555,8 @@ a {
   padding: 1.3rem 0;
   text-transform: uppercase;
   text-align: center; }
+.page__inner {
+  overflow: auto; }
 .page table {
   color: inherit; }
 .page th {
@@ -569,3 +576,31 @@ a {
 .payment h4 {
   color: #36aeea;
   text-align: right; }
+
+.gallery .page__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+.gallery .image {
+  width: 30%;
+  height: 200px;
+  margin: 0 !important;
+  margin-right: 1rem !important;
+  margin-bottom: 1rem !important; }
+  .gallery .image:last-child {
+    margin-right: 0px !important; }
+  @media screen and (max-width: 576px) {
+    .gallery .image {
+      width: 100% !important;
+      margin-right: 0px !important; } }

@@ -9,8 +9,8 @@
         <Payment id="payment"></Payment>
         <Gallery id="gallery"></Gallery>
         <Contacts id="contacts"></Contacts>
-        <Footer></Footer>
       </div>
+      <Footer></Footer>
     </content>
   </div>
 </template>

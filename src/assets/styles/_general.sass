@@ -80,7 +80,12 @@ a
     color: $col_acsent
 
 .form-control
-  +border-radius($rad_form_contr)      
+  +border-radius($rad_form_contr)
+
+.table
+  .form-control
+    +border-radius(0)
+
 
 .link
   color: $col_acsent
@@ -89,3 +94,4 @@ a
   &:hover
     color: $col_acsent
     text-decoration: underline
+
