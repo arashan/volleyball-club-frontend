@@ -6,6 +6,8 @@
       <div class="container">
         <News></News>
         <Timetable></Timetable>
+        <Payment></Payment>
+        <Gallery></Gallery>
       </div>
     </content>
   </div>
@@ -17,11 +19,13 @@
   import headerSlider from './components/HeaderSlider.vue'
   import News from './components/News.vue'
   import Timetable from './components/Timetable.vue'
+  import Payment from './components/Payment.vue'
+  import Gallery from './components/Gallery.vue'
 
   export default {
     name: 'app',
     components: {
-      Header, headerSlider, News, Timetable
+      Header, headerSlider, News, Timetable, Payment, Gallery
     }
   }
 </script>
