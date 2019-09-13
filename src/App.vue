@@ -8,6 +8,7 @@
         <Timetable></Timetable>
         <Payment></Payment>
         <Gallery></Gallery>
+        <Contacts></Contacts>
       </div>
     </content>
   </div>
@@ -21,11 +22,12 @@
   import Timetable from './components/Timetable.vue'
   import Payment from './components/Payment.vue'
   import Gallery from './components/Gallery.vue'
+  import Contacts from './components/Contacts.vue'
 
   export default {
     name: 'app',
     components: {
-      Header, headerSlider, News, Timetable, Payment, Gallery
+      Header, headerSlider, News, Timetable, Payment, Gallery, Contacts
     }
   }
 </script>
