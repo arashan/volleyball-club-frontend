@@ -33,6 +33,10 @@ a
     text-decoration: unset
     color: inherit
 
+img
+  width: 100%
+  height: 100%
+
 .container
   //background: $col_bg
   //background: black
@@ -45,8 +49,24 @@ a
   font-family: "Bringin"
   text-align: center
   cursor: pointer
+  position: relative
+  width: $w_logo_ic
+  height: $h_header
   &__firstLetter
     color: $col_acsent
+  .logo__ic
+    display: inline-block
+    width: $w_logo_ic
+    height: $h_logo_ic
+    background-color: transparent
+    background-image: url('images/ic/logo.svg')
+    background-position: 0 0
+    background-repeat: no-repeat
+    background-size: contain
+    position: absolute
+    top: -5px
+    left: 5px
+    z-index: 1000
 
 .btn
   font-family: $ff_btn
