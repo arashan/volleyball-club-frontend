@@ -4,11 +4,11 @@
             <div class="footer__inner">
                 <div class="footer__copyright">All rights reserved 2019</div>
                 <ul class="social-menu">
-                    <li class="social-menu__li" v-for="(item, i) in socials" :key="i"><a :class="item.class" :href="item.link">{{item.name}}</a></li>
+                    <li class="social-menu__li" v-for="(item, i) in socials" :key="i"><a class="social-menu-item" :class="item.class" :href="item.link"></a></li>
                 </ul>
-                <ul class="footer-contacts">
-                    <li class="footer-contacts__li"><a href="#">whatsapp</a></li>
-                    <li><a href="#">Telegram</a></li>
+                <ul class="social-menu footer__conts">
+                    <li class="social-menu__li"><a href="#" class="social-menu-item whatsp"></a></li>
+                    <li class="social-menu__li"><a href="#" class="social-menu-item tlgr"></a></li>
                 </ul>
             </div>
         </div>
@@ -22,19 +22,19 @@
             return {
                 socials: [
                     {
-                        "name": "fb",
+                        "name": "facebook",
                         "link" : "#",
-                        class: "social-menu__fb"
+                        class: "fb"
                     },
                     {
-                        "name": "tw",
+                        "name": "twitter",
                         "link" : "#",
-                        class: "social-menu__tw"
+                        class: "tw"
                     },
                     {
-                        "name": "inst",
+                        "name": "instagram",
                         "link" : "#",
-                        class: "social-menu__inst"
+                        class: "inst"
                     }
                 ]
             }
