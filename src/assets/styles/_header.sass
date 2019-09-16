@@ -99,17 +99,33 @@
 		font-size: $fs_footer
 		+flexbox
 		&__li
-			margin-right: 5px
+			margin-right: 1rem
 			&:last-child
 				margin-right: 0px
 
 .social-menu
 	+flexbox
 	&__li
-		margin-right: 5px
+		margin-right: 1rem
 		&:last-child
 			margin-right: 0px		
-	&__fb
-		width: 50px
-		height: 50px
-		background: transparent url("images/ic/ic-fb.svg") no-repeat
+	&-item
+		display: inline-block
+		width: 25px
+		height: 25px
+		background:
+			color: transparent
+			repeat: no-repeat
+			size: contain
+		&:hover
+			opacity: 0.8
+	.fb
+		background-image: url("images/ic/ic-fb.svg")
+	.tw
+		background-image: url("images/ic/ic-tw.svg")
+	.inst
+		background-image: url("images/ic/ic-inst.svg")
+	.whatsp
+		background-image: url("images/ic/ic-whatsp.svg")
+	.tlgr
+		background-image: url("images/ic/ic-tlgr.svg")
