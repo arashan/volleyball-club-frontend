@@ -8,7 +8,7 @@
                <li v-if="hasFirst()"><a href="#" class="pagination__item" @click="changePage(1)">1</a></li>
                <li v-if="hasFirst()" class="">...</li>
                <li v-for="(page,i) in pages" :key="i" class="pagination__item">
-                   <a href="#" @click.prevent="changePage(page)">{{ page }}</a>
+                   <a href="#" :class="{ current: page===current }" @click.prevent="changePage(page)" >{{ page }}</a>
                </li>
                <li v-if="hasLast()" class="">...</li>
                <li v-if="hasLast()" class="pagination__item"><a href="#" @click="changePage(totalPages)">{{totalPages}}</a></li>
@@ -104,5 +104,8 @@
     }
     .pagination_btn {
         margin: 0px 25px;
+    }
+    .current {
+        color: red;
     }
 </style>
