@@ -23,6 +23,7 @@
 
         <input ref="inputCell"
                type="text"
+               class="form-control"
                v-model="currentCellValue"
                v-show="currentCell"
                @keyup.13="saveCell"
