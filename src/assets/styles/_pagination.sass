@@ -1,0 +1,24 @@
+.pagination
+  +flexbox
+  +justify-content(center)
+  +align-items(center)
+  font-family: OpenSans, Arial
+  font-size: 1rem
+  margin-bottom: 0.5rem
+  &__list
+    +flexbox
+  &__item
+    margin-left: 1rem
+  &_btn
+    +flexbox
+    +justify-content(center)
+    +align-items(center)
+    margin: 0px 2rem
+    padding: 0
+    width: $w_pagination_btn
+    height: $h_pagination_btn
+    line-height: 1
+    +border-radius(50%)
+
+.current
+  color: $col_acsent

@@ -1,7 +1,7 @@
 <template>
     <div class="pagination">
-        <div class="pagination_btn pagination__left" v-if="hasPrev()">
-            <a href="#" @click="changePage(prevPage)">Предыдущая</a>
+        <div class="pagination_btn pagination__left btn btn--transp" v-if="hasPrev()">
+            <a href="#" @click="changePage(prevPage)"><</a>
         </div>
         <div class="pagination__mid" >
            <ul class="pagination__list">
@@ -14,8 +14,8 @@
                <li v-if="hasLast()" class="pagination__item"><a href="#" @click="changePage(totalPages)">{{totalPages}}</a></li>
            </ul>
         </div>
-        <div class="pagination_btn pagination__right" v-if="hasNext()">
-            <a href="#" @click="changePage(nextPage)">Следующая</a>
+        <div class="pagination_btn pagination__right btn btn--transp" v-if="hasNext()">
+            <a href="#" @click="changePage(nextPage)">></a>
         </div>
     </div>
 </template>
@@ -88,24 +88,3 @@
         }
     }
 </script>
-
-<style scoped>
-    .pagination__left, .pagination__right {
-        margin-right: 10px;
-        padding: 5px;
-        border: 1px solid darkblue;
-        background: lightblue;
-    }
-    .pagination__list {
-        display: flex;
-    }
-    .pagination__item {
-        margin-left: 10px;
-    }
-    .pagination_btn {
-        margin: 0px 25px;
-    }
-    .current {
-        color: red;
-    }
-</style>

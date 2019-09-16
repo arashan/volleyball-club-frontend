@@ -1,0 +1,16 @@
+.gallery
+  .gallery-wrap
+    +flexbox
+    +justify-content(flex-start)
+    +flex-wrap(wrap)
+  .image
+    flex-grow: 1
+    width: $w_gallery_img
+    height: $h_gallery_img
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    border: $w_gallery_img_brd solid $col_gallery_item_border
+    margin: 0
+    +phone
+      width: 100%
