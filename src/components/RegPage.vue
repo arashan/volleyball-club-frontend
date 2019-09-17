@@ -62,13 +62,13 @@
                     </label>
 
                     <label for="height_user" class="col-sm-1 col-form-label">Рост</label>
-                    <input id="height_user" type="number" class="form-control col-sm-2 mb-2 mr-sm-2 mb-sm-0" placeholder="Рост" v-filter="'[0-9]'" v-model="height">
+                    <input id="height_user" type="text" class="form-control col-sm-2 mb-2 mr-sm-2 mb-sm-0" placeholder="Рост" v-filter="'[0-9]'" v-model="height">
 
                     <label for="chest_size" class="col-sm-1 col-form-label">ОГ</label>
-                    <input id="chest_size" type="number" class="form-control col-sm-2 mb-2 mr-sm-2 mb-sm-0" placeholder="Обхват груди">
+                    <input id="chest_size" type="text" class="form-control col-sm-2 mb-2 mr-sm-2 mb-sm-0" placeholder="Обхват груди" v-filter="'[0-9]'" v-model="chest">
 
                     <label for="waist_size" class="col-sm-1 col-form-label">ОТ</label>
-                    <input id="waist_size" type="number" class="form-control col-sm-2 mb-2 mr-sm-2 mb-sm-0" placeholder="Обхват талии">
+                    <input id="waist_size" type="text" class="form-control col-sm-2 mb-2 mr-sm-2 mb-sm-0" placeholder="Обхват талии" v-filter="'[0-9]'" v-model="waist ">
 
                 </div>
 
@@ -89,7 +89,9 @@
                 lastname: '',
                 middlename: '',
                 height: '',
-                phone: ''
+                phone: null,
+                waist: '',
+                chest: ''
             }
         }
     }
