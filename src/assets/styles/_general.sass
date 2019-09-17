@@ -103,6 +103,7 @@ img
   font-size: $fs_body
   +border-radius($rad_form_contr)
 
+
 .table
   td, th
     padding: 0.5rem
@@ -132,3 +133,17 @@ img
 
 .row--center
   +justify-content(center)
+
+.registry
+  .row
+    margin-left: 0
+    margin-right: 0
+  .form-inline
+    +justify-content(flex-start)
+    label
+      +justify-content(flex-end)
+    .form-check-label
+      +justify-content(flex-start)
+
+.title--acsent
+  color: $col_acsent

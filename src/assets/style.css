@@ -231,6 +231,31 @@ img {
   -moz-justify-content: center;
   justify-content: center; }
 
+.registry .row {
+  margin-left: 0;
+  margin-right: 0; }
+.registry .form-inline {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  justify-content: flex-start; }
+  .registry .form-inline label {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    justify-content: flex-end; }
+  .registry .form-inline .form-check-label {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    justify-content: flex-start; }
+
+.title--acsent {
+  color: #36aeea; }
+
 /* header style */
 .header {
   position: fixed;
