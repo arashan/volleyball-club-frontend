@@ -8,6 +8,8 @@
             <div class="form-group">
                 <input type="password" id="password" class="form-control" placeholder="Пароль" />
             </div>
+        </div>
+        <div slot="footer">
             <div class="form-group">
                 <button type="button" class="btn" @click="sendToAuth">Ввойти</button>
             </div>
@@ -16,7 +18,6 @@
                 <a href="#" class="link ml-3" @click="sendToRegistration">Регистрация</a>
             </div>
         </div>
-        <div slot="footer"></div>
     </modal>
 </template>
 
