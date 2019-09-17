@@ -134,15 +134,12 @@ img {
 .logo {
   display: inline-block;
   font-size: 2rem;
-  color: #949494;
-  font-family: "Bringin";
+  color: #36aeea;
+  font-family: "OpenSans Bold", Arial, sans-serif;
   text-align: center;
   cursor: pointer;
   position: relative;
-  width: 90px;
-  height: 80px; }
-  .logo__firstLetter {
-    color: #36aeea; }
+  text-transform: uppercase; }
   .logo .logo__ic {
     display: inline-block;
     width: 90px;
@@ -266,6 +263,9 @@ img {
     @media screen and (max-width: 768px) {
       .header__inner {
         padding: 0.5rem 0; } }
+  .header__logo {
+    width: 90px;
+    height: 80px; }
   .header__humburg {
     display: none;
     background-image: url(images/ic/ic-menu1.svg);
@@ -621,10 +621,39 @@ img {
   text-align: right; }
 
 /* login form */
+.modal {
+  display: block !important; }
+  .modal::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0.5; }
+  .modal-header {
+    border-bottom-width: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center; }
+  .modal-content {
+    z-index: 2000; }
+  .modal-footer {
+    border-top-width: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center; }
+
 .login-form {
   width: 400px;
   padding: 30px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: white;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
