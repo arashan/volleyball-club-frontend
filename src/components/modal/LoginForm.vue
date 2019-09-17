@@ -27,14 +27,6 @@
         components: {
             modal
         },
-        props: {
-            showLoginModal: Boolean
-        },
-        data: function() {
-            return {
-
-            }
-        },
         computed: {
             showModal() {
                 return this.$store.state.root.showModal
@@ -49,6 +41,7 @@
             },
             remindPassword() {
                 this.closeModal();
+                this.$store.dispatch('root/toggleRemindPassModal', true);
             },
             sendToRegistration() {
                 this.closeModal();

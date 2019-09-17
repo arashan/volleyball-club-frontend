@@ -13,7 +13,8 @@
       </div>
       <Footer></Footer>
     </content>
-      <login-form></login-form>
+    <login-form></login-form>
+    <remind-pass></remind-pass>
   </div>
 </template>
 
@@ -30,12 +31,13 @@
   import Footer from './components/Footer.vue'
 
   import loginForm from './components/modal/LoginForm'
+  import remindPass from './components/modal/RemindPassword'
 
   export default {
     name: 'app',
     components: {
       Header, headerSlider, News, Timetable, Payment, Gallery, Contacts, Footer, loginForm,
-      regPage
+      regPage, remindPass
     },
     data: function() {
         return {
