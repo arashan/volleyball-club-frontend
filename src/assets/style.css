@@ -681,7 +681,7 @@ img {
   align-items: center;
   font-family: OpenSans, Arial;
   font-size: 1rem;
-  margin-bottom: 0.5rem; }
+  margin-top: 0.5rem; }
   .pagination__list {
     display: -webkit-box;
     display: -webkit-flex;
@@ -690,6 +690,8 @@ img {
     display: flex; }
   .pagination__item {
     margin-left: 1rem; }
+    .pagination__item:first-child {
+      margin-left: 0; }
   .pagination_btn {
     display: -webkit-box;
     display: -webkit-flex;
