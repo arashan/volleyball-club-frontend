@@ -58,3 +58,9 @@
         </div>
     </div>
 </template>
+
+<script>
+    export default {
+        name: 'RegPage'
+    }
+</script>

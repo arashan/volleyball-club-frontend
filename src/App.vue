@@ -9,6 +9,7 @@
         <Payment id="payment"></Payment>
         <Gallery id="gallery"></Gallery>
         <Contacts id="contacts"></Contacts>
+        <reg-page></reg-page>
       </div>
       <Footer></Footer>
     </content>
@@ -25,6 +26,7 @@
   import Payment from './components/Payment.vue'
   import Gallery from './components/Gallery.vue'
   import Contacts from './components/Contacts.vue'
+  import regPage from './components/RegPage'
   import Footer from './components/Footer.vue'
 
   import loginForm from './components/modal/LoginForm'
@@ -32,7 +34,8 @@
   export default {
     name: 'app',
     components: {
-      Header, headerSlider, News, Timetable, Payment, Gallery, Contacts, Footer, loginForm
+      Header, headerSlider, News, Timetable, Payment, Gallery, Contacts, Footer, loginForm,
+      regPage
     },
     data: function() {
         return {
