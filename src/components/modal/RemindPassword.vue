@@ -7,7 +7,7 @@
             </div>
             <div class="form-group">Я не робот</div>
             <div class="form-group">
-                <button type="button" class="btn">Применить</button>
+                <button type="button" class="btn" @click="remindPassword()">Применить</button>
             </div>
         </div>
         <div slot="footer"></div>
