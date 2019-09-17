@@ -1,22 +1,23 @@
 <template>
     <div class="page gallery">
         <h2 class="page__title">Галерея</h2>
-        <pagination
-                :current="currentPage"
-                :total="totalPhotos"
-                :perPage="perPage"
-                @page-changed="getPhotoToCurrentPage">
-        </pagination>
         <div class="page__inner">
-
+            <pagination
+                    :current="currentPage"
+                    :total="totalPhotos"
+                    :perPage="perPage"
+                    @page-changed="getPhotoToCurrentPage">
+            </pagination>
             <vue-gallery :images="photos" :index="index" @close="index = null"></vue-gallery>
-            <div
+            <div class="gallery-wrap">
+                <div
                 class="image"
                 v-for="(image, imageIndex) in photos"
                 :key="imageIndex"
                 @click="index = imageIndex"
                 :style="{ backgroundImage: 'url(' + image + ')' }"
-            ></div>
+                ></div>
+            </div>
 
         </div>
     </div>
@@ -123,14 +124,3 @@
         }
     }
 </script>
-
-<style scoped>
-    .image {
-        float: left;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        border: 1px solid #ebebeb;
-        margin: 5px;
-    }
-</style>
