@@ -1,8 +1,8 @@
 <template>
     <div class="pagination">
-        <div class="pagination_btn pagination__left btn btn--transp" v-if="hasPrev()">
-            <a href="#" @click="changePage(prevPage)"><</a>
-        </div>
+        <button type="button" class="pagination_btn pagination__left btn btn--transp" @click="changePage(prevPage)" v-if="hasPrev()">
+            <
+        </button>
         <div class="pagination__mid" >
            <ul class="pagination__list">
                <li v-if="hasFirst()"><a href="#" class="pagination__item" @click="changePage(1)">1</a></li>
@@ -14,9 +14,9 @@
                <li v-if="hasLast()" class="pagination__item"><a href="#" @click="changePage(totalPages)">{{totalPages}}</a></li>
            </ul>
         </div>
-        <div class="pagination_btn pagination__right btn btn--transp" v-if="hasNext()">
-            <a href="#" @click="changePage(nextPage)">></a>
-        </div>
+        <button type="button" class="pagination_btn pagination__right btn btn--transp" @click="changePage(nextPage)" v-if="hasNext()">
+            >
+        </button>
     </div>
 </template>
 

@@ -2,12 +2,7 @@
     <div class="page gallery">
         <h2 class="page__title">Галерея</h2>
         <div class="page__inner">
-            <pagination
-                    :current="currentPage"
-                    :total="totalPhotos"
-                    :perPage="perPage"
-                    @page-changed="getPhotoToCurrentPage">
-            </pagination>
+
             <vue-gallery :images="photos" :index="index" @close="index = null"></vue-gallery>
             <div class="gallery-wrap">
                 <div
@@ -18,6 +13,12 @@
                 :style="{ backgroundImage: 'url(' + image + ')' }"
                 ></div>
             </div>
+            <pagination
+                    :current="currentPage"
+                    :total="totalPhotos"
+                    :perPage="perPage"
+                    @page-changed="getPhotoToCurrentPage">
+            </pagination>
 
         </div>
     </div>
