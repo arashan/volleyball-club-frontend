@@ -12,15 +12,17 @@
                 </ul>
 
                 <div class="login header__login">
-                    <button class="btn btn--transp" data-toggle="modal" data-target="#exampleModal">Вход</button>
+                    <button class="btn btn--transp" data-toggle="modal" @click="openModal" data-target="#openModal">Вход</button>
                 </div>
             </div>
         </div>
+
     </header>
 </template>
 
 <script>
     import Logo from './Logo'
+
     export default {
         name: 'Header',
         components: {
@@ -35,7 +37,13 @@
                     {link: '#gallery', name: 'Галерея'},
                     {link: '#contacts', name: 'Контакты'},
                 ],
-                showMenu: false
+                showMenu: false,
+                showModal: false
+            }
+        },
+        methods: {
+            openModal() {
+                this.$store.dispatch('root/toggleModal', true);
             }
         }
     }

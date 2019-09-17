@@ -5,6 +5,7 @@ import DatePicker from 'vue2-datepicker'
 import VueGallery from 'vue-gallery';
 
 import Vue from 'vue';
+import store from './store/store';
 import App from './App.vue';
 
 const moment = require('moment');
@@ -19,5 +20,6 @@ Vue.component('vue-gallery', VueGallery);
 Vue.config.productionTip = false;
 
 new Vue({
-  render: h => h(App),
+  store,
+  render: h => h(App)
 }).$mount('#app');

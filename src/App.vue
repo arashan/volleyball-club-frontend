@@ -12,6 +12,7 @@
       </div>
       <Footer></Footer>
     </content>
+      <login-form></login-form>
   </div>
 </template>
 
@@ -26,10 +27,20 @@
   import Contacts from './components/Contacts.vue'
   import Footer from './components/Footer.vue'
 
+  import loginForm from './components/modal/LoginForm'
+
   export default {
     name: 'app',
     components: {
-      Header, headerSlider, News, Timetable, Payment, Gallery, Contacts, Footer
+      Header, headerSlider, News, Timetable, Payment, Gallery, Contacts, Footer, loginForm
+    },
+    data: function() {
+        return {
+
+        }
+    },
+    methods: {
+
     }
   }
 </script>
