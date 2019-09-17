@@ -194,6 +194,7 @@ img {
     color: #36aeea; }
 
 .form-control {
+  font-size: 14px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px; }
@@ -225,6 +226,13 @@ img {
   .link:hover {
     color: #36aeea;
     text-decoration: underline; }
+
+.row--center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center; }
 
 /* header style */
 .header {
@@ -509,21 +517,6 @@ img {
         width: calc(15px / 2) !important;
         height: calc(15px / 2) !important; } }
 
-/* login form */
-.login-form {
-  width: 400px;
-  padding: 30px;
-  background-color: rgba(255, 255, 255, 0.8);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  text-align: center; }
-  .login-form .form-group:last-child {
-    margin-bottom: 0px; }
-
-.login-form-title {
-  font-size: 3rem; }
-
 /* content */
 .article-list {
   display: -webkit-box;
@@ -606,8 +599,6 @@ img {
   padding: 1.3rem 0;
   text-transform: uppercase;
   text-align: center; }
-.page__inner {
-  overflow: auto; }
 .page table {
   color: inherit; }
 .page th {
@@ -628,6 +619,21 @@ img {
 .payment h4 {
   color: #36aeea;
   text-align: right; }
+
+/* login form */
+.login-form {
+  width: 400px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  text-align: center; }
+  .login-form .form-group:last-child {
+    margin-bottom: 0px; }
+
+.login-form-title {
+  font-size: 3rem; }
 
 .gallery .gallery-wrap {
   display: -webkit-box;
