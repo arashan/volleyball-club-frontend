@@ -134,16 +134,21 @@ img
 .row--center
   +justify-content(center)
 
-.registry
-  .row
-    margin-left: 0
-    margin-right: 0
-  .form-inline
-    +justify-content(flex-start)
-    label
-      +justify-content(flex-end)
-    .form-check-label
-      +justify-content(flex-start)
+
+.phone-num
+  .form-control
+    width: 200px !important
+    padding-left: calc(#{$ml_form_control}*2 + calc(#{$w_flag}/2))
+    +phone
+      width: 100% !important
+
+.flag
+  width: $w_flag
+  height: $h_flag
+  position: absolute
+  top: 0px
+  left: 0px
+  margin: -#{$ml_form_control} 0 0 $ml_form_control !important
 
 .title--acsent
   color: $col_acsent

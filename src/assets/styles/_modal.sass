@@ -7,8 +7,8 @@
     top: 0
     left: 0
     z-index: 1040
-    width: 100vw
-    height: 100vh
+    width: 100%
+    height: 100%
     background-color: #000
     opacity: 0.5
   &-header
@@ -19,6 +19,12 @@
   &-footer
     border-top-width: 0
     +justify-content(center)
+
+.modal-dialog
+  height: 100%
+  +flexbox
+  +justify-content(center)
+  +align-items(center)
 
 .login-form
   width: 400px

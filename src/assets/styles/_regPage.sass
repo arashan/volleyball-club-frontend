@@ -1,0 +1,27 @@
+.registry
+  .row
+    margin-left: 0
+    margin-right: 0
+  .form-inline
+    +justify-content(flex-start)
+    .form-control
+      width: 100% !important
+      +phone
+        margin-left: $ml_form_control
+        margin-right: $ml_form_control
+    .col-form-label
+      +justify-content(flex-end)
+      &:first-child
+        +justify-content(flex-start)
+    .form-check-label
+      +justify-content(flex-start)
+      +phone
+        margin-left: $ml_form_control
+        margin-right: $ml_form_control
+
+.inline-row
+  +flexbox
+  .col-form-label
+    margin-right: $ml_form_control
+  .form-control
+    width: $w_phone_input

@@ -1,6 +1,6 @@
 <template>
     <modal v-if="showModal">
-        <h3 slot="header" class="login-form-title logo form-group"><span class="logo__firstLetter">I</span>skra</h3>
+        <h3 slot="header" class="login-form-title logo form-group"><span class="logo__firstLetter">И</span>скра</h3>
         <div slot="body">
             <div class="form-group">
                 <input type="text" id="login" class="form-control" placeholder="Логин" />
