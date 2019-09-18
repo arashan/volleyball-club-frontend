@@ -35,19 +35,17 @@
                 </div>
                 <div class="form-group row">
                     <label for="phone_num" class="col-sm-2 col-md-3 col-form-label col-lg-2">Телефон</label>
-                    <div class="col-sm-2 col-md-3 col-lg-2">
                         <phone-mask-input
                                 id="phone_num"
                                 v-model="phone"
                                 autoDetectCountry
                                 showFlag
-                                wrapperClass="wrraper-example"
-                                inputClass="input-example"
+                                wrapperClass="phone-num col-sm-2 col-md-3 col-lg-2"
+                                inputClass="form-control"
                                 flagClass="flag-example"
                                 placeholder="+(996) 700 999 999"
                                 required
                         />
-                    </div>
                 </div>
                 <div class="form-group row mt-4">
                     <h4 class="title--acsent col-sm-12">Дополнительная информация</h4>
