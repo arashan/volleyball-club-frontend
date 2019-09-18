@@ -140,10 +140,27 @@ img
     margin-right: 0
   .form-inline
     +justify-content(flex-start)
-    label
+    .form-control
+      width: 100% !important
+      +phone
+        margin-left: 15px
+        margin-right: 15px
+    .col-form-label
       +justify-content(flex-end)
+      &:first-child
+        +justify-content(flex-start)
     .form-check-label
       +justify-content(flex-start)
+      +phone
+        margin-left: 15px
+        margin-right: 15px
 
 .title--acsent
   color: $col_acsent
+
+.inline-row
+  +flexbox
+  .col-form-label
+    margin-right: 15px
+  .form-control
+    width: 400px

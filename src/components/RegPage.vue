@@ -4,63 +4,52 @@
         <div class="page__inner">
             <form class="registry-form">
                 <div class="form-group row">
-                    <label for="name" class="col-sm-2 col-form-label">Имя</label>
-                    <div class="col-sm-10">
+                    <label for="name" class="col-sm-2 col-md-3 col-lg-2 col-form-label">Имя</label>
+                    <div class="col-sm-10 col-md-9 col-lg-10">
                         <input id="name" type="text" class="form-control" placeholder="Имя" required>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="surname" class="col-sm-2 col-form-label">Фамилия</label>
-                    <div class="col-sm-10">
+                    <label for="surname" class="col-sm-2 col-md-3 col-lg-2 col-form-label">Фамилия</label>
+                    <div class="col-sm-10 col-md-9 col-lg-10">
                         <input id="surname" type="text" class="form-control" placeholder="Фамилия" required>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="patronymic" class="col-sm-2 col-form-label">Отчество</label>
-                    <div class="col-sm-10">
+                    <label for="patronymic" class="col-sm-2 col-md-3 col-form-label col-lg-2">Отчество</label>
+                    <div class="col-sm-10 col-md-9 col-lg-10">
                         <input id="patronymic" type="text" class="form-control" placeholder="Отчество">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="birthDate" class="col-sm-2 col-form-label">Дата рождения</label>
-                    <div class="col-sm-2">
+                    <label for="birthDate" class="col-sm-2 col-md-3 col-form-label col-lg-2">Дата рождения</label>
+                    <div class="col-sm-2 col-md-3 col-lg-2">
                         <input id="birthDate" type="date" class="form-control">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="email" class="col-sm-2 col-form-label">Эл почта</label>
-                    <div class="col-sm-10">
+                    <label for="email" class="col-sm-2 col-md-3 col-form-label col-lg-2">Эл почта</label>
+                    <div class="col-sm-10 col-md-9 col-lg-10">
                         <input id="email" type="text" class="form-control" placeholder="you@example.com" required>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="phone_num" class="col-sm-2 col-form-label">Телефон</label>
-                    <div class="col-sm-10">
+                    <label for="phone_num" class="col-sm-2 col-md-3 col-form-label col-lg-2">Телефон</label>
+                    <div class="col-sm-2 col-md-3 col-lg-2">
                         <input id="phone_num" type="text" class="form-control" placeholder="+(996) 700 999 999" required>
                     </div>
                 </div>
-                <div class="form-group row">
+                <div class="form-group row mt-4">
                     <h4 class="title--acsent col-sm-12">Дополнительная информация</h4>
                 </div>
                 <div class="form-group form-inline">
-                    <label class="form-check-label col-form-label col-sm-1">
-                        <input class="form-check-input" type="radio" id="inlineCheckbox1" name="opt1" value="option1">Жен
-                    </label>
-                    <label class="form-check-label col-form-label col-sm-1">
-                        <input class="form-check-input" type="radio" id="inlineCheckbox2" name="opt1" value="option1">Муж
-                    </label>
-
-                    <label for="height_user" class="col-sm-1 col-form-label">Рост</label>
-                    <input id="height_user" type="number" class="form-control col-sm-2 mb-2 mr-sm-2 mb-sm-0" placeholder="Рост">
-
-                    <label for="chest_size" class="col-sm-1 col-form-label">ОГ</label>
-                    <input id="chest_size" type="number" class="form-control col-sm-2 mb-2 mr-sm-2 mb-sm-0" placeholder="Обхват груди">
-
-                    <label for="waist_size" class="col-sm-1 col-form-label">ОТ</label>
-                    <input id="waist_size" type="number" class="form-control col-sm-2 mb-2 mr-sm-2 mb-sm-0" placeholder="Обхват талии">
-
+                    <label for="height_user" class="col-form-label col-lg-1 col-md-1">Рост</label>
+                    <input id="height_user" type="number" class="form-control col-lg-2 col-md-2 col-sm-10" placeholder="Рост">
+                    <label for="chest_size" class="col-form-label col-lg-1 col-md-1">ОГ</label>
+                    <input id="chest_size" type="number" class="form-control col-lg-2 col-md-2 col-sm-10" placeholder="Обхват груди">
+                    <label for="waist_size" class="col-form-label col-lg-1 col-md-1">ОТ</label>
+                    <input id="waist_size" type="number" class="form-control col-lg-2 col-md-2 col-sm-10" placeholder="Обхват талии">
                 </div>
-
                 <div class="form-group row row--center">
                     <button class="btn btn-primary" type="submit">Готово</button>
                 </div>
