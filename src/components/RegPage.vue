@@ -60,11 +60,11 @@
                 </div>
                 <div class="form-group form-inline">
                     <label for="height_user" class="col-form-label col-lg-1 col-md-1">Рост</label>
-                    <input id="height_user" type="number" class="form-control col-lg-2 col-md-2 col-sm-10" placeholder="Рост" v-filter="'([0-9/,/.]'" v-model="height">
+                    <input id="height_user" type="text" class="form-control col-lg-2 col-md-2 col-sm-10" placeholder="Рост" v-filter="'[0-9,.]'" maxlength="5" v-model="height">
                     <label for="chest_size" class="col-form-label col-lg-1 col-md-1">ОГ</label>
-                    <input id="chest_size" type="number" class="form-control col-lg-2 col-md-2 col-sm-10" placeholder="Обхват груди" v-filter="'[0-9/,/.]'" v-model="chest">
+                    <input id="chest_size" type="text" class="form-control col-lg-2 col-md-2 col-sm-10" placeholder="Обхват груди" v-filter="'[0-9,.]'" maxlength="5" v-model="chest">
                     <label for="waist_size" class="col-form-label col-lg-1 col-md-1">ОТ</label>
-                    <input id="waist_size" type="number" class="form-control col-lg-2 col-md-2 col-sm-10" placeholder="Обхват талии" v-filter="'[0-9/,/.]'" v-model="waist">
+                    <input id="waist_size" type="text" class="form-control col-lg-2 col-md-2 col-sm-10" placeholder="Обхват талии" v-filter="'[0-9,.]'" maxlength="5" v-model="waist">
                 </div>
                 <div class="form-group row row--center">
                     <button class="btn btn-primary" type="submit">Готово</button>
