@@ -240,21 +240,48 @@ img {
   -webkit-justify-content: flex-start;
   -moz-justify-content: flex-start;
   justify-content: flex-start; }
-  .registry .form-inline label {
+  .registry .form-inline .form-control {
+    width: 100% !important; }
+    @media screen and (max-width: 576px) {
+      .registry .form-inline .form-control {
+        margin-left: 15px;
+        margin-right: 15px; } }
+  .registry .form-inline .col-form-label {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
     -moz-justify-content: flex-end;
     justify-content: flex-end; }
+    .registry .form-inline .col-form-label:first-child {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      -webkit-justify-content: flex-start;
+      -moz-justify-content: flex-start;
+      justify-content: flex-start; }
   .registry .form-inline .form-check-label {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     -webkit-justify-content: flex-start;
     -moz-justify-content: flex-start;
     justify-content: flex-start; }
+    @media screen and (max-width: 576px) {
+      .registry .form-inline .form-check-label {
+        margin-left: 15px;
+        margin-right: 15px; } }
 
 .title--acsent {
   color: #36aeea; }
+
+.inline-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .inline-row .col-form-label {
+    margin-right: 15px; }
+  .inline-row .form-control {
+    width: 400px; }
 
 /* header style */
 .header {

@@ -8,7 +8,7 @@
                 <img class="slider-img" :src="item.img" alt="First slide">
                 <div class="slider-text-wrap">
                     <div class="slider-text">
-                        <h5 class="slider-text__title">Играй с нами в <br> <span class="logo">Iskre</span></h5>
+                        <h5 class="slider-text__title">Играй с нами в <br> <span class="logo">Искре</span></h5>
                         <p class="slider-text__descr">{{item.text}}</p>
                     </div>
                 </div>
