@@ -2,7 +2,7 @@
     <div class="page registry">
         <h2 class="page__title">Регистрация</h2>
         <div class="page__inner">
-            <form class="registry-form">
+            <form class="registry-form" >
                 <div class="form-group row">
                     <label for="name" class="col-sm-2 col-form-label">Имя</label>
                     <div class="col-sm-10">
@@ -24,13 +24,21 @@
                 <div class="form-group row">
                     <label for="birthDate" class="col-sm-2 col-form-label">Дата рождения</label>
                     <div class="col-sm-2">
-                        <input id="birthDate" type="date" class="form-control">
+                        <!--<input id="birthDate" type="date" class="form-control">-->
+                        <datetime-picker
+                                id="birthDate"
+                                v-model="birthDate"
+                                lang="ru"
+                                type="date"
+                                format="DD.MM.YYYY"
+                                placeholder="Выберите дату"
+                        />
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="email" class="col-sm-2 col-form-label">Эл почта</label>
                     <div class="col-sm-10">
-                        <input id="email" type="text" class="form-control" placeholder="you@example.com" required>
+                        <input id="email" type="email" class="form-control" placeholder="you@example.com" required v-model="email">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -62,13 +70,13 @@
                     </label>
 
                     <label for="height_user" class="col-sm-1 col-form-label">Рост</label>
-                    <input id="height_user" type="text" class="form-control col-sm-2 mb-2 mr-sm-2 mb-sm-0" placeholder="Рост" v-filter="'[0-9]'" v-model="height">
+                    <input id="height_user" type="text" class="form-control col-sm-2 mb-2 mr-sm-2 mb-sm-0" placeholder="Рост" v-filter="'([0-9/,/.]'" v-model="height">
 
                     <label for="chest_size" class="col-sm-1 col-form-label">ОГ</label>
-                    <input id="chest_size" type="text" class="form-control col-sm-2 mb-2 mr-sm-2 mb-sm-0" placeholder="Обхват груди" v-filter="'[0-9]'" v-model="chest">
+                    <input id="chest_size" type="text" class="form-control col-sm-2 mb-2 mr-sm-2 mb-sm-0" placeholder="Обхват груди" v-filter="'[0-9/,/.]'" v-model="chest">
 
                     <label for="waist_size" class="col-sm-1 col-form-label">ОТ</label>
-                    <input id="waist_size" type="text" class="form-control col-sm-2 mb-2 mr-sm-2 mb-sm-0" placeholder="Обхват талии" v-filter="'[0-9]'" v-model="waist ">
+                    <input id="waist_size" type="text" class="form-control col-sm-2 mb-2 mr-sm-2 mb-sm-0" placeholder="Обхват талии" v-filter="'[0-9/,/.]'" v-model="waist">
 
                 </div>
 
@@ -88,11 +96,16 @@
                 name: '',
                 lastname: '',
                 middlename: '',
+                email: '',
+                birthDate: '',
                 height: '',
-                phone: null,
+                phone: '+996',
                 waist: '',
                 chest: ''
             }
+        },
+        methods: {
+
         }
     }
 </script>
