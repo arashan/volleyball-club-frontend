@@ -647,8 +647,8 @@ img {
     top: 0;
     left: 0;
     z-index: 1040;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: #000;
     opacity: 0.5; }
   .modal-header {
@@ -667,6 +667,24 @@ img {
     -webkit-justify-content: center;
     -moz-justify-content: center;
     justify-content: center; }
+
+.modal-dialog {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center; }
 
 .login-form {
   width: 400px;
