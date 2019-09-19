@@ -15,6 +15,7 @@
     </content>
     <login-form></login-form>
     <remind-pass></remind-pass>
+    <add-news></add-news>
   </div>
 </template>
 
@@ -32,12 +33,13 @@
 
   import loginForm from './components/modal/LoginForm'
   import remindPass from './components/modal/RemindPassword'
+  import addNews from './components/modal/AddNews'
 
   export default {
     name: 'app',
     components: {
       Header, headerSlider, News, Timetable, Payment, Gallery, Contacts, Footer, loginForm,
-      regPage, remindPass
+      regPage, remindPass, addNews
     },
     data: function() {
         return {

@@ -103,6 +103,8 @@ img
   font-size: $fs_body
   +border-radius($rad_form_contr)
 
+.close
+  cursor: pointer
 
 .table
   td, th
@@ -131,6 +133,9 @@ img
     color: $col_acsent
     text-decoration: underline
 
+.row
+  +align-items(center)
+
 .row--center
   +justify-content(center)
 
@@ -152,3 +157,50 @@ img
 
 .title--acsent
   color: $col_acsent
+
+.col-form-label
+  text-align: left
+
+.input-group-text-ic
+  display: inline-block
+  width: $w_input_gr_text_ic
+  color: $col_ic
+
+.enter
+  background:
+    image: url(images/ic/ic-enter.svg)
+    position: 0px 0px
+    size: cover
+    repeat: no-repeat
+
+.tag-list
+  height: auto
+  text-align: left
+  +flexbox
+  +flex-wrap(wrap)
+  +border-radius(0)
+  max-height: calc( calc(1.5em + calc(#{$pt_tag_list_li} * 2) + 1px)*3 + calc(#{$pt_tag_list_li}*2))
+  overflow-y: scroll
+  &-li
+    position: relative
+    margin-right: 1rem
+    padding: $pt_tag_list_li 0
+    height: calc(1.5em + calc(#{$pt_tag_list_li} * 2) + 2px)
+    &:last-child
+      margin-right: 0
+  &-item
+    +border-radius($rad_form_contr)
+    background-color: $col_tab_item
+    padding: 5px
+  .close
+    display: inline-block
+    position: absolute
+    top: 0
+    right: -$w_close_ic
+    width: $w_close_ic
+    height: $h_close_ic
+    background:
+      image: url(images/ic/ic-close.svg)
+      size: cover
+      position: 0px 0px
+
