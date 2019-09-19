@@ -2,7 +2,7 @@
     <transition name="modal">
         <div class="modal-mask modal">
             <div class="modal-wrapper modal-dialog">
-                <div class="modal-container modal-content login-form">
+                <div class="modal-container modal-content modal-form">
 
                     <div class="modal-header">
                         <slot name="header">
@@ -33,10 +33,7 @@
 <script>
     export default {
         name: "Modal",
-        showModal: false
+        showModal: false,
+        isActive: true
     }
 </script>
-
-<style scoped>
-
-</style>

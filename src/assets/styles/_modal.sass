@@ -21,20 +21,34 @@
     +justify-content(center)
 
 .modal-dialog
+  max-width: 50%!important
   height: 100%
   +flexbox
   +justify-content(center)
   +align-items(center)
+  +large
+    max-width: 60%!important
+  +tablet
+    max-width: 90%!important
+  +phone
+    min-width: calc(100% - 30px)
+    margin: .5rem auto
 
-.login-form
-  width: 400px
+.modal-form
+  width: 100%
+  min-width: 400px
   padding: 30px
   background-color: rgba(255, 255, 255, 1)
   +border-radius($rad_form)
   text-align: center 
   .form-group
     &:last-child
-      margin-bottom: 0px    
+      margin-bottom: 0px
+  .custom-file-label
+    text-align: left
+    &::after
+      display: none
 
 .login-form-title      
   font-size: 3rem
+
