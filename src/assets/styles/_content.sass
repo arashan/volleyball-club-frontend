@@ -1,13 +1,15 @@
 /* content */
 .article-list
   +flexbox
+  +justify-content(space-around)
   +align-items(center)
   margin-bottom: 1rem
   +tablet
     +flex-direction(column)
   &__img
-    width: 20%
-    margin-right: 2rem
+    width: calc(100% - #{$w_article_info} - #{$mr_article_img})
+    min-width: $w_article_img
+    margin-right: $mr_article_img
     margin-bottom: 0
     img
       width: 100%
@@ -17,7 +19,7 @@
       margin-right: 0
       margin-bottom: 0.5rem
   &__info
-    width: 70%
+    width: $w_article_info
     +tablet
       width: 100%
   &__title
@@ -65,6 +67,8 @@
     text-align: center
   &__inner
     //overflow: auto
+  &__add
+    text-align: right
   table
     color: inherit
   th
@@ -90,4 +94,7 @@
     color: $col_acsent
     text-align: right
 
-
+.news-title, .news-subtitle
+  max-height: calc( calc(1.5em + calc(#{$pt_tag_list_li} * 2) + 1px)*2)
+  overflow-y: scroll
+  resize: none
