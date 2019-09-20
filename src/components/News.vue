@@ -5,7 +5,7 @@
             <button type="button" class="btn"  @click="openAddNewsModal">Добавить новость</button>
         </div>
         <div class="page__inner">
-            <news-item v-for="article in articleList" :key="article.id" :article="article"></news-item>
+            <news-item v-for="article in articles" :key="article.id" :article="article"></news-item>
         </div>
         <pagination
                 :current="currentPage"
