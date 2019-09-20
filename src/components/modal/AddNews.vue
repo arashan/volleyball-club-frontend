@@ -1,5 +1,5 @@
 <template>
-    <modal v-if="showAddNewsModal">
+    <modal v-if="showAddNewsModal" :sizeClass="'lg'">
         <h3 slot="header" class="form-group">Добавить новость</h3>
         <div  slot="body">
             <div class="form-group row">
@@ -66,13 +66,11 @@
         },
         computed: {
             showAddNewsModal() {
-                console.log(this.$store.state.root.showAddNewsModal);
                 return this.$store.state.root.showAddNewsModal
             }
         },
         methods: {
             closeAddNewsModal() {
-                console.log(this.$store.state.root.showAddNewsModal);
                 this.$store.dispatch('root/toggleAddNewsModal', false);
             },
             addNews() {

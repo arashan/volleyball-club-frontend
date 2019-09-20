@@ -1,5 +1,5 @@
 <template>
-    <modal v-if="showModal">
+    <modal v-if="showModal"  :sizeClass="'sm'">
         <h3 slot="header" class="login-form-title logo form-group"><span class="logo__firstLetter">И</span>скра</h3>
         <div slot="body">
             <div class="form-group">

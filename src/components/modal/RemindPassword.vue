@@ -1,5 +1,5 @@
 <template>
-    <modal v-if="showRemindPassModal">
+    <modal v-if="showRemindPassModal" :sizeClass="'sm'">
         <h3 slot="header" class="login-form-title logo form-group"><span class="logo__firstLetter">I</span>skra</h3>
         <div  slot="body">
             <div class="form-group">

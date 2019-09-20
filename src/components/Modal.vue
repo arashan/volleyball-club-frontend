@@ -1,6 +1,6 @@
 <template>
     <transition name="modal">
-        <div class="modal-mask modal">
+        <div class="modal-mask modal" :class="sizeClass">
             <div class="modal-wrapper modal-dialog">
                 <div class="modal-container modal-content modal-form">
 
@@ -33,7 +33,8 @@
 <script>
     export default {
         name: "Modal",
-        showModal: false,
-        isActive: true
+        props: {
+            sizeClass: String  //задает класс, управляющий  размером модального окна()
+        }
     }
 </script>
