@@ -47,7 +47,6 @@
                 });
             },
             openAddNewsModal() {
-                console.log(this.$store.state.root.showAddNewsModal);
                 this.$store.dispatch('root/toggleAddNewsModal', true);
             },
             getArticlesToCurrentPage(page) {
