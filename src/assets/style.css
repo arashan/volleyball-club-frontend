@@ -763,16 +763,6 @@ img {
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center; }
-  @media screen and (max-width: 1200px) {
-    .modal-dialog {
-      max-width: 60% !important; } }
-  @media screen and (max-width: 768px) {
-    .modal-dialog {
-      max-width: 90% !important; } }
-  @media screen and (max-width: 576px) {
-    .modal-dialog {
-      min-width: calc(100% - 30px);
-      margin: 0.5rem auto; } }
 
 .modal-form {
   width: 100%;
@@ -792,6 +782,25 @@ img {
 
 .login-form-title {
   font-size: 3rem; }
+
+.lg .modal-dialog {
+  max-width: 50% !important; }
+  @media screen and (max-width: 1200px) {
+    .lg .modal-dialog {
+      max-width: 70% !important; } }
+  @media screen and (max-width: 768px) {
+    .lg .modal-dialog {
+      max-width: 90% !important; } }
+  @media screen and (max-width: 576px) {
+    .lg .modal-dialog {
+      min-width: calc(100% - 30px);
+      margin: 0.5rem auto; } }
+
+.sm .modal-dialog {
+  max-width: 20% !important; }
+  @media screen and (max-width: 576px) {
+    .sm .modal-dialog {
+      max-width: 100% !important; } }
 
 .gallery .gallery-wrap {
   display: -webkit-box;

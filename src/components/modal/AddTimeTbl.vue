@@ -1,6 +1,6 @@
 <template>
     <modal v-if="showAddTimeTblModal" :sizeClass="'lg'">
-        <h3 slot="header" class="form-group">Добавить новость</h3>
+        <h3 slot="header" class="form-group">Добавить расписание</h3>
         <div  slot="body">
             <div class="form-group row">
                 <label for="timeT" class="col-form-label col-md-2">Время</label>

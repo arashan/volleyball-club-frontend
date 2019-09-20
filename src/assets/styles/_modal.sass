@@ -26,13 +26,7 @@
   +flexbox
   +justify-content(center)
   +align-items(center)
-  +large
-    max-width: 60%!important
-  +tablet
-    max-width: 90%!important
-  +phone
-    min-width: calc(100% - 30px)
-    margin: .5rem auto
+
 
 .modal-form
   width: 100%
@@ -52,3 +46,18 @@
 .login-form-title      
   font-size: 3rem
 
+.lg
+  .modal-dialog
+    max-width: 50%!important
+    +large
+      max-width: 70%!important
+    +tablet
+      max-width: 90%!important
+    +phone
+      min-width: calc(100% - 30px)
+      margin: .5rem auto
+.sm
+  .modal-dialog
+    max-width: 20%!important
+    +phone
+      max-width: 100%!important
