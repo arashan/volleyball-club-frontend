@@ -1,6 +1,9 @@
 <template>
     <div class="page timetable">
         <h2 class="page__title">Расписание</h2>
+        <div class="form-group page__add">
+            <button type="button" class="btn"  @click="openAddTimeTblModal">Добавить расписание</button>
+        </div>
         <div class="page__inner">
             <table class="table table-bordered" disable-dbl-tap-zoom>
                 <thead>
@@ -119,7 +122,10 @@
                     res = ddate.format('hh:mm')
                 }
                 return res;
-            }
+            },
+            openAddTimeTblModal() {
+                this.$store.dispatch('root/toggleAddTimeTblModal', true);
+            },
         },
         mounted() {
             this.loadData();
